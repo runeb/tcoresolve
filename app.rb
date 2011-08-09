@@ -10,7 +10,7 @@ require 'json'
 use Rack::JSONP
 
 get '/' do
-  response.headers['Cache-Control'] = 'public, max-age=3000000'
+  response.headers['Cache-Control'] = 'public, max-age=3000'
   
   if tco = params[:tco]
     content_type 'application/json'
