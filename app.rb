@@ -26,6 +26,6 @@ get '/' do
     
     return {url: url}.to_json
   else
-    "Try with /?tco=W8RmLlN"
+    File.read(File.join('public', 'index.html'))
   end
 end
